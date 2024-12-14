@@ -5,6 +5,7 @@ import { use } from "react";
 import calculateTotalOrder from "@/lib/helper";
 import Image from "next/image";
 
+
 export default function ModalOrder() {
 
     const { onRequestClose, order, finishOrder } = use(OrderContext);
@@ -54,7 +55,7 @@ export default function ModalOrder() {
                             <section key={order.id} className={styles.item}>
 
                                 <span>
-                                    Qtd: {order.amount} - <b>{order.Product.name}</b> - R$ {parseFloat(order.Product.price).toFixed(2) * order.amount}
+                                    Qtd: {order.amount} - <b>{order.Product.name}</b> - R$ {parseFloat(order.Product.price) * order.amount}
                                 </span>
                                 
                                 <span className={styles.description}>
