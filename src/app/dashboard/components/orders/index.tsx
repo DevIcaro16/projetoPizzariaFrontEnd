@@ -32,7 +32,7 @@ export interface OrderItemProps{
         banner: string;
         category_id: string;
     };
-    order: {
+    Order: {
         id: string;
         table: number;
         name: string;

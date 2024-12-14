@@ -28,7 +28,7 @@ export interface OrderItemProps{
     Order: {
         id: string;
         table: number;
-        name: string | null;
+        name: string;
         status: boolean;
         draft: boolean;
     }
